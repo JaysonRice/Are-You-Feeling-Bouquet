@@ -1,0 +1,10 @@
+{
+    "flowers": [
+        {
+            "id": 1,
+            "species": "Lavender",
+            "color": "Purple"
+            
+        }
+    ]
+}
