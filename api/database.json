@@ -2,9 +2,28 @@
     "flowers": [
         {
             "id": 1,
-            "species": "Lavender",
+            "species": "Lily",
+            "color": "Pink"
+        },
+        {
+            "id": 2,
+            "species": "Hdrangea",
+            "color": "Mixed"
+        },
+        {
+            "id": 3,
+            "species": "Tulip",
+            "color": "Yellow"
+        },
+        {
+            "id": 4,
+            "species": "Rose",
+            "color": "Red"
+        },
+        {
+            "id": 5,
+            "species": "Orchid",
             "color": "Purple"
-            
         }
     ]
 }
