@@ -29,7 +29,7 @@
     "retailers": [
         {
             "id": 1,
-            "name": "Paula's Flowers",
+            "name": "Paula's Flower Shop",
             "state": "New Mexico",
             "city": "Santa Fe",
             "address": "343 Street Dr",
@@ -57,7 +57,7 @@
             "state": "Florida",
             "city": "Orlando",
             "address": "142 West Elk Ave",
-            "distributorId": 4
+            "distributorId": 3
         },
         {
             "id": 5,
@@ -85,17 +85,146 @@
         },
         {
             "id": 3,
-            "name": "Jean's Flowers",
+            "name": "Flower Fields",
             "state": "Tennessee",
             "city": "Elizabethton",
             "address": "334 Fox Rd"
+        }
+    ],
+    "nurseries": [
+        {
+            "id": 1,
+            "name": "Jean's Garden"
+        },
+        {
+            "id": 2,
+            "name": "Lindsey's Nursery"
+        },
+        {
+            "id": 3,
+            "name": "Jean's Flowers"
         },
         {
             "id": 4,
-            "name": "Flower Fields",
-            "state": "Georgia",
-            "city": "Augusta",
-            "address": "182 Roan St"
+            "name": "Flower Fields"
+        },
+        {
+            "id": 5,
+            "name": "Jayson's Nursery"
+        }
+    ],
+    "flowerNurseries": [
+        {
+            "id": 1,
+            "nurseryId":1,
+            "flowerId": 2
+        },
+        {
+            "id": 2,
+            "nurseryId":1,
+            "flowerId": 5
+        },
+        {
+            "id": 3,
+            "nurseryId":2,
+            "flowerId": 1
+        },
+        {
+            "id": 4,
+            "nurseryId":2,
+            "flowerId": 2
+        },
+        {
+            "id": 5,
+            "nurseryId":3,
+            "flowerId": 4
+        },
+        {
+            "id": 6,
+            "nurseryId":3,
+            "flowerId": 5
+        },
+        {
+            "id": 7,
+            "nurseryId":4,
+            "flowerId": 2
+        },
+        {
+            "id": 8,
+            "nurseryId":4,
+            "flowerId": 3
+        },
+        {
+            "id": 9,
+            "nurseryId":5,
+            "flowerId": 1
+        },
+        {
+            "id": 10,
+            "nurseryId":5,
+            "flowerId": 3
+        }
+    ],
+    "flowerNurseryDistributors": [
+        {
+            "id": 1,
+            "flowerNurseryId":1,
+            "distributorId": 1
+        },
+        {
+            "id": 2,
+            "flowerNurseryId":2,
+            "distributorId": 1
+        },
+        {
+            "id": 3,
+            "flowerNurseryId":9,
+            "distributorId": 1
+        },
+        {
+            "id": 4,
+            "flowerNurseryId":10,
+            "distributorId": 1
+        },
+        {
+            "id": 5,
+            "flowerNurseryId":3,
+            "distributorId": 2
+        },
+        {
+            "id": 6,
+            "flowerNurseryId":4,
+            "distributorId": 2
+        },
+        {
+            "id": 7,
+            "flowerNurseryId":5,
+            "distributorId": 2
+        },
+        {
+            "id": 8,
+            "flowerNurseryId":6,
+            "distributorId": 2
+        },
+        {
+            "id": 9,
+            "flowerNurseryId":7,
+            "distributorId": 3
+        },
+        {
+            "id": 10,
+            "flowerNurseryId":8,
+            "distributorId": 3
+        },
+        {
+            "id": 11,
+            "flowerNurseryId":1,
+            "distributorId": 3
+        },
+        {
+            "id": 12,
+            "flowerNurseryId":2,
+            "distributorId": 3
         }
     ]
 }
