@@ -7,7 +7,7 @@
         },
         {
             "id": 2,
-            "species": "Hdrangea",
+            "species": "Hydrangea",
             "color": "Mixed"
         },
         {
@@ -24,6 +24,48 @@
             "id": 5,
             "species": "Orchid",
             "color": "Purple"
+        }
+    ],
+    "retailers": [
+        {
+            "id": 1,
+            "name": "Paula's Flowers",
+            "state": "New Mexico",
+            "city": "Santa Fe",
+            "address": "343 Street Dr",
+            "flowerId": 2
+        },
+        {
+            "id": 2,
+            "name": "Flower Power",
+            "state": "California",
+            "city": "San Diego",
+            "address": "564 Badmitten Rd",
+            "flowerId": 1
+        },
+        {
+            "id": 3,
+            "name": "Xtreme's Petal Shop",
+            "state": "Tennessee",
+            "city": "Knoxville",
+            "address": "1111 Anteater Rd",
+            "flowerId": 3
+        },
+        {
+            "id": 4,
+            "name": "Boom Blooms",
+            "state": "Florida",
+            "city": "Orlando",
+            "address": "142 West Elk Ave",
+            "flowerId": 5
+        },
+        {
+            "id": 5,
+            "name": "Stems n' Such",
+            "state": "Washington",
+            "city": "Spokane",
+            "address": "4432 Bear Rd",
+            "flowerId": 4
         }
     ]
 }
