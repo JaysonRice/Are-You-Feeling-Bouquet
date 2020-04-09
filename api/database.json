@@ -33,7 +33,7 @@
             "state": "New Mexico",
             "city": "Santa Fe",
             "address": "343 Street Dr",
-            "flowerId": 2
+            "distributorId": 2
         },
         {
             "id": 2,
@@ -41,7 +41,7 @@
             "state": "California",
             "city": "San Diego",
             "address": "564 Badmitten Rd",
-            "flowerId": 1
+            "distributorId": 2
         },
         {
             "id": 3,
@@ -49,7 +49,7 @@
             "state": "Tennessee",
             "city": "Knoxville",
             "address": "1111 Anteater Rd",
-            "flowerId": 3
+            "distributorId": 3
         },
         {
             "id": 4,
@@ -57,7 +57,7 @@
             "state": "Florida",
             "city": "Orlando",
             "address": "142 West Elk Ave",
-            "flowerId": 5
+            "distributorId": 4
         },
         {
             "id": 5,
@@ -65,7 +65,37 @@
             "state": "Washington",
             "city": "Spokane",
             "address": "4432 Bear Rd",
-            "flowerId": 4
+            "distributorId": 1
+        }
+    ],
+    "distributors": [
+        {
+            "id": 1,
+            "name": "Grandma's Garden",
+            "state": "Oregon",
+            "city": "Oregon City",
+            "address": "111 Country Dr"
+        },
+        {
+            "id": 2,
+            "name": "Pleasant Meadows",
+            "state": "California",
+            "city": "Norwalk",
+            "address": "314 Mango Rd"
+        },
+        {
+            "id": 3,
+            "name": "Jean's Flowers",
+            "state": "Tennessee",
+            "city": "Elizabethton",
+            "address": "334 Fox Rd"
+        },
+        {
+            "id": 4,
+            "name": "Flower Fields",
+            "state": "Georgia",
+            "city": "Augusta",
+            "address": "182 Roan St"
         }
     ]
 }
