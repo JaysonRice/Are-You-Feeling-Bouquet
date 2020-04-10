@@ -1,12 +1,24 @@
 .retailerList{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .retailer {
-border: dashed goldenrod 2px;
-background-color: lightblue;
-margin-top: 1rem;
-padding: .5rem;
+    border: dashed goldenrod 2px;
+    background-color: lightblue;
+    margin-top: 1rem;
+    padding: .5rem;
+    flex-basis: 30%;
+}
+
+.flower__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.flower__list li {
+    margin: .2rem 1rem;
 }
