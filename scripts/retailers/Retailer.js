@@ -1,4 +1,4 @@
-export const Retailer = (retailerObject, distributorObject, nurseryArray) => {
+export const Retailer = (retailerObject, distributorObject, nurseryArray, nurseryFlowerArray) => {
     return `
         <section class="retailer">
             <header class="retailer__name retailer__card__text">
@@ -8,14 +8,23 @@ export const Retailer = (retailerObject, distributorObject, nurseryArray) => {
             </header>
             <section retailer__distributor retailer__card__text>
             <h3>Distributor: ${distributorObject.name}</h3>
-            <div class="distributor__nurseries retailer__card__text">
+            <div class="retailer__distributor__nurseries retailer__card__text">
+            <h4>Nurseries:</h4>
                 <ul>
-                <h4>Nurseries:</h4>
-                    ${
-                        nurseryArray.map(nursery => `<li>${nursery.name}</li>`).join("")
-                    }
+                        ${
+                            nurseryArray.map(nursery => `<li>${nursery.name}</li>`).join("")
+                        }
                 </ul>
-            </section>
+            </div>
+            <div class="retailer__distributor__nursery__flowers retailer__card__text">
+            <h4>Available Flowers</h4>
+                <ul class= "flower__list">
+                        ${
+                            nurseryFlowerArray.map(flower => `<li>${flower.species} - ${flower.color}</li>`).join("")
+                        }
+                </ul>
+            </div>
+        </section>
     </section>
     `
 }

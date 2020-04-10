@@ -11,22 +11,23 @@ const contentTarget = document.querySelector(".retailerList")
 const render = retailersToRender => {
     const distributors = useDistributors()
     const nurseries = useNurseries()
-    const nursuryFlowers = useFlowerNurseries()
+    const nurseryFlowers = useFlowerNurseries()
     const nurseryDistributors = useDistributorNurseries()
+    const flowers = useFlowers()
 
     contentTarget.innerHTML = retailersToRender.map(
         (retailerObject) => {
             // Find the related distributor for the current retailer
-            const foundDistributor = distributors.find( distributor => distributor.id === retailerObject.distributorId )
+            const foundDistributor = distributors.find(distributor => distributor.id === retailerObject.distributorId)
 
-             // Get all nursery relationships for the current distributor
-             const thisNurseryDistributorRelationships = nurseryDistributors.filter(
+            // Get all nursery relationships for the current distributor
+            const thisNurseryDistributorRelationships = nurseryDistributors.filter(
                 disNurseRel => {
                     return foundDistributor.id === disNurseRel.distributorId
                 }
             )
 
-            // For each relationship, convert to corresponding customer object
+            // For each relationship, convert to corresponding nursery object
             const theMatchingNurseries = thisNurseryDistributorRelationships.map(
                 rel => {
                     const nursery = nurseries.find(nurse => rel.nurseryId === nurse.id)
@@ -34,7 +35,21 @@ const render = retailersToRender => {
                 }
             )
 
-            return Retailer(retailerObject, foundDistributor, theMatchingNurseries)
+            const foundFlowers = theMatchingNurseries.map(
+                foundNursery => {
+
+                    const nurseryFlowerRelationships = nurseryFlowers.filter(
+                        nurseryFlower => {
+                            return foundNursery.id === nurseryFlower.nurseryId
+
+                        }
+                    )
+                    const flowersFromThisNursery = nurseryFlowerRelationships.map (nurseryFlower => flowers.find (flower => nurseryFlower.flowerId === flower.id))
+                    return flowersFromThisNursery
+                }
+            ).flat()
+
+            return Retailer(retailerObject, foundDistributor, theMatchingNurseries, foundFlowers)
         }
     ).join("")
 }

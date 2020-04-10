@@ -5,6 +5,7 @@ import { RetailerList } from "./retailers/RetailerList.js";
 import { getDistributors } from "./distributors/DistributorDataProvider.js";
 import { getNurseries } from "./nurseries/NurseryProvider.js";
 import { getDistributorNurseries } from "./nurseries/DistributorNurseryProvider.js";
+import { getFlowerNurseries } from "./nurseries/FlowerNurseryProvider.js";
 
 getFlowers()
     .then(FlowerList)
@@ -12,5 +13,7 @@ getFlowers()
 getRetailers()
     .then(getDistributors)
     .then(getNurseries)
+    .then(getFlowers)
     .then(getDistributorNurseries)
+    .then(getFlowerNurseries)
     .then(RetailerList)

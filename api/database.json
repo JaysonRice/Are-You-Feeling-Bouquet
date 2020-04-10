@@ -102,11 +102,11 @@
         },
         {
             "id": 3,
-            "name": "Jean's Flowers"
+            "name": "Flannery's Flowers"
         },
         {
             "id": 4,
-            "name": "Flower Fields"
+            "name": "Plant Patch"
         },
         {
             "id": 5,
@@ -184,7 +184,7 @@
         {
             "id": 4,
             "distributorId": 2,
-            "nurseryId":5
+            "nurseryId":2
         },
         {
             "id": 5,
