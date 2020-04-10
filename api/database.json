@@ -164,5 +164,38 @@
             "nurseryId":5,
             "flowerId": 3
         }
+    ],
+    "distributorNurseries": [
+        {
+            "id": 1,
+            "distributorId": 1,
+            "nurseryId":2
+        },
+        {
+            "id": 2,
+            "distributorId": 1,
+            "nurseryId":3
+        },
+        {
+            "id": 3,
+            "distributorId": 2,
+            "nurseryId":4
+        },
+        {
+            "id": 4,
+            "distributorId": 2,
+            "nurseryId":5
+        },
+        {
+            "id": 5,
+            "distributorId": 3,
+            "nurseryId":1
+        },
+        {
+            "id": 6,
+            "distributorId": 3,
+            "nurseryId":5
+        }
     ]
+
 }
